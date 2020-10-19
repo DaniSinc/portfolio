@@ -1,0 +1,22 @@
+.sidenav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: black;
+    color: white;
+    width: 200px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    a{
+        font-size: 30px;
+        color: white;
+        margin-left: 5px;
+        margin-bottom: 20px;
+        margin-top: 24px;
+        &:hover {
+            color: white;
+        }
+    }
+}

@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,300&display=swap');
+
+/* banner styling  */
+
+.tog {
+    background-image: url('https://res.cloudinary.com/dsjaabri5/image/upload/v1603113909/portfolio/IMG_0041_pfpm1v.jpg');
+    background-size: cover;
+}
+
+.banner-container h1 {
+  color: #f4f6ff;
+  font-family: 'Lato', sans-serif;
+  font-size: 30px;
+}
+
+.header-text {
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  text-align: left;
+}
+
+.typewriter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin: 10px 0 0 0;
+  padding: 0;
+  color: transparent;
+  white-space: nowrap;
+}
+
+.typewriter:before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 43px;
+  width: 100%;
+  height: 100%;
+  color: white;
+  overflow: hidden;
+  border-right: 1px solid white;
+  animation: type 10s steps(30) infinite;
+;}
+
+@keyframes type
+{
+    0%
+    {
+      width: 0;
+    }
+    50%
+    {
+      width: 100%;
+    }
+    100%
+    {
+      width: 0;
+    }
+  }
