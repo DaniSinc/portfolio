@@ -1,0 +1,77 @@
+.outer-projects-page {
+  margin-left: 6%;
+  margin-right: 6%;
+  margin: 0 auto;
+  margin-top: 56px;
+  min-height: 84vh;
+  background-color: black;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.projects-page {
+  text-align: center;
+  background-image: url(https://images.unsplash.com/photo-1515404929826-76fff9fef6fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60);
+  padding: 1px;
+      h2 {
+        color: white;
+        font-size: 40px;
+        padding-bottom: 1px;
+      }
+}
+
+.projects-body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 25px;
+  margin-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+    p {
+      color: white;
+      // font-family: 'Lora', serif;
+      font-size: 16px;
+      letter-spacing: 0.1em;
+      font-weight: 200;
+      text-align: center;
+      margin-top: 15px;
+  }
+}
+
+.inner-projects-page {
+  margin: 10px;
+  background-color: black;
+  // border-top: $teal 3px solid;
+}
+
+.project {
+  border-top: 1px $orange solid;
+}
+
+
+.project img {
+  margin: 10px;
+}
+
+
+.portrait img {
+  height: 330px;
+  width: 200px;
+  left: 0;
+}
+
+// .gallery-portrait {
+//   display: grid;
+//   grid-template-columns: 1fr 1fr;
+// }
+
+#project3 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+    img {
+      align-self: center;
+      justify-self: center;
+    }
+
+}

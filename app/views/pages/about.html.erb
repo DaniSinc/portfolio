@@ -6,16 +6,28 @@
 </div>
 
 <div class="home">
-  <a class="toggle-nav">
-    <i class="fas fa-bars"></i>
-      Menu
-  </a>
-  <div class="about-page">
-      <h2>ABOUT</h2>
-      <hr>
-      <p>Full-Stack Web Developer with experience building websites and web applications. I specialise in Ruby on Rails but also
-          proficient in front-end programming languages: JavaScript, HTML, CSS and incorporating data from back-end databases and
-          services.
-      </p>
+  <div class="toggle-div">
+    <a class="toggle-nav">
+      <i class="fas fa-bars"></i>
+        Menu
+    </a>
+  </div>
+  <div class="outer-about-page">
+    <div class="about-page fade-in1">
+      <div class="inner-about-page">
+        <div class="fade-in2">
+          <hr class="one">
+          <h2>ABOUT</h2>
+        </div>
+        <div class="about-body fade-in3">
+          <p>
+          Welcome to my personal website!<br><br>My name is Daniela, I am a trained Full-Stack web developer who enjoys both creating eye-catching designs and problem-solving functuality issues. 
+          I build websites and web applications, specialising in Ruby on Rails and also proficient in front-end programming languages and incorporating data from back-end databases and services.
+          </p>
+          <%= image_tag 'profile.jpeg', class: "profile-pic" %>
+        </div>
+        <hr class="two">
+      </div>
+    </div>
   </div>
 </div>

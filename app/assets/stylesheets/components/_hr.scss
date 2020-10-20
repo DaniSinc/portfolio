@@ -1,0 +1,29 @@
+hr.one {
+  height: 4px;
+  background: linear-gradient(to right, black, $teal);
+}
+
+hr.two {
+  height: 4px;
+  background: linear-gradient(to left, black, $teal);
+}
+
+hr.three {
+  height: 4px;
+  background: linear-gradient(to right, black, $orange);
+}
+
+hr.four {
+  height: 4px;
+  background: linear-gradient(to left, black, $orange);
+}
+
+hr.five {
+  height: 4px;
+  background: linear-gradient(to right, black, $green);
+}
+
+hr.six {
+  height: 4px;
+  background: linear-gradient(to left, black, $green);
+}

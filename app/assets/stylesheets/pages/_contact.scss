@@ -1,0 +1,43 @@
+.outer-contact-page {
+  margin-left: 6%;
+  margin-right: 6%;
+  margin: 0 auto;
+  margin-top: 56px;
+  min-height: 84vh;
+  background-color: black;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.contact-page {
+  text-align: center;
+  background-image: url(https://images.unsplash.com/photo-1558858728-9d25cee1d2fa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 5px;
+      h2 {
+        color: white;
+        font-size: 40px;
+        padding-bottom: 5px;
+      }
+}
+
+.contact-body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 25px;
+    p {
+      color: white;
+      // font-family: 'Lora', serif;
+      font-size: 16px;
+      letter-spacing: 0.1em;
+      font-weight: 200;
+      text-align: left;
+  }
+}
+
+.inner-contact-page {
+  margin: 10px;
+  background-color: black;
+  // border-top: $teal 3px solid;
+}

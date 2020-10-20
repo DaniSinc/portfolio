@@ -1,12 +1,13 @@
 // Specific CSS for your home-page
-html {
-  background-color: #f5a25d;
-}
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
 
+html {
+  background-color: black;
+}
 
 body {
   background-color: #FAFAFA;
-  font-family: 'Lato', sans-serif;
+  // font-family: 'Lora', serif;
   color: #f4f6ff;
   font-size: 16px;
   line-height: 25px;
@@ -17,9 +18,8 @@ body {
 
 h2, h3 {
   color: black;
-  font-family: 'Lato', sans-serif;
+  // font-family: 'Lora', serif;
   font-size: 24;
-  font-weight: bold;
 }
 
 a {
@@ -33,7 +33,7 @@ a:hover {
 
 p {
   color: black;
-
+  // font-family: 'Lora', serif;
 }
 
 li i {
@@ -51,49 +51,11 @@ li a{
     position: relative;
     min-height: 100vh;
     transition: transform 0.5s;
-    background-color: #F5A25D;
+    background-color: black;
 }
 
 .open {
     transform: translate(200px, 0);
     min-height: 100vh;
-    background-color: #F5A25D;
-}
-
-.toggle-nav {
-    position: absolute;
-    top: 3%;
-    left: 6%;
-    text-decoration: none;
-    i {
-        padding-right: 10px;
-    }
-}
-
-a.toggle-nav {
-    text-decoration: none;
-    color: white;
-}
-
-.sidenav {
-    position: fixed;
-    top: 0;
-    left: 0;
     background-color: black;
-    color: white;
-    width: 200px;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    a{
-        font-size: 30px;
-        color: white;
-        margin-left: 5px;
-        margin-bottom: 20px;
-        margin-top: 24px;
-        &:hover {
-            color: white;
-        }
-    }
 }

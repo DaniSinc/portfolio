@@ -5,111 +5,116 @@
     <%= link_to 'Contact', contact_path %>
 </div>
 
-  <div class="home">
-      <a class="toggle-nav">
-        <i class="fas fa-bars"></i>
-            Menu
+<div class="home">
+  <div class="toggle-div">
+    <a class="toggle-nav">
+      <i class="fas fa-bars"></i>
+        Menu
     </a>
-    <img src="../../assets/markup/thhhcover.png" alt="" height="300" width="533" class="framed-image" id="main">
-    <div class="gallery__previews">
-      <img src="../../assets/nomarkup/thhhcover.png" onclick="changeImage(this.src)" alt="Gallery image" height="78" width="139" />
-      <img src="../../assets/nomarkup/thhhsign.png" onclick="changeImage(this.src)" alt="Gallery image" height="78" width="139" />
-      <img src="../../assets/nomarkup/thhhsearch.png" onclick="changeImage(this.src)" alt="Gallery image" height="78" width="139" />
-      <img src="../../assets/nomarkup/thhhchat.png" onclick="changeImage(this.src)" alt="Gallery image" height="78" width="139" />
-    </div>
-
-    <script>
-      const changeImage = src => {
-        document.getElementById('main').src = src.replace("nomarkup", "markup");
-      };
-    </script>
   </div>
+  <div class="outer-projects-page">
+    <div class="projects-page fade-in1">
+      <div class="inner-projects-page">
+        <div class="title fade-in2">
+          <hr class="three">
+          <h2>PROJECTS</h2>
+        </div>
 
-  <div>
-    <img src="../../assets/markup/otbcover.png" alt="" height="300" width="533" class="framed-image" id="main2">
-    <div class="gallery__previews">
-      <img src="../../assets/nomarkup/otbcover.png" onclick="changeSecondImage(this.src)" alt="Gallery image" height="78" width="139" />
-      <img src="../../assets/nomarkup/otbsearch.png" onclick="changeSecondImage(this.src)" alt="Gallery image" height="78" width="139" />
-      <img src="../../assets/nomarkup/otbshow.png" onclick="changeSecondImage(this.src)" alt="Gallery image" height="78" width="139" />
+        <div class="projects-body fade-in3">
+        
+          <div class="project" id="project1">
+            <p>
+              The Healthy Hair Hub
+            </p>
+            <img src="../../assets/markup/thhhcover.png" alt="" height="300" width="533" class="framed-image" id="main">
+            <div class="gallery__previews">
+              <img src="../../assets/nomarkup/thhhcover.png" onclick="changeImage(this.src)" alt="Gallery image" height="78" width="139" />
+              <img src="../../assets/nomarkup/thhhsign.png" onclick="changeImage(this.src)" alt="Gallery image" height="78" width="139" />
+              <img src="../../assets/nomarkup/thhhsearch.png" onclick="changeImage(this.src)" alt="Gallery image" height="78" width="139" />
+              <img src="../../assets/nomarkup/thhhresults.png" onclick="changeImage(this.src)" alt="Gallery image" height="78" width="139" />
+            </div>
+
+            <span>
+                  <a href="http://www.thehealthyhairhub.com/">
+                    <i class="fas fa-globe-americas"></i> Website
+                  </a>
+
+                  <a href="https://github.com/DaniSinc/CurlFriend">
+                    <i class="fab fa-github-square"></i>Repository
+                  </a>
+            </span>
+
+            <script>
+              const changeImage = src => {
+                document.getElementById('main').src = src.replace("nomarkup", "markup");
+              };
+            </script>
+          </div>
+
+          <div class="project" id="project2">
+            <p>
+              Open Tool Box
+            </p>
+            <img src="../../assets/markup/otbcover.png" alt="" height="300" width="533" class="framed-image" id="main2">
+            <div class="gallery__previews">
+              <img src="../../assets/nomarkup/otbcover.png" onclick="changeSecondImage(this.src)" alt="Gallery image" height="78" width="139" />
+              <img src="../../assets/nomarkup/otbsearch.png" onclick="changeSecondImage(this.src)" alt="Gallery image" height="78" width="139" />
+              <img src="../../assets/nomarkup/otbshow.png" onclick="changeSecondImage(this.src)" alt="Gallery image" height="78" width="139" />
+            </div>
+
+            <span>
+                  <a href="https://opentoolbox-joshuaobura.herokuapp.com/">
+                    <i class="fas fa-globe-americas"></i> Website
+                  </a>
+
+                  <a href="https://github.com/JoshuaObura/open_Tool_Box">
+                    <i class="fab fa-github-square"></i>Repository
+                  </a>
+            </span>
+
+            <script>
+              const changeSecondImage = src => {
+                document.getElementById('main2').src = src.replace("nomarkup", "markup");
+              };
+            </script>
+
+          </div>
+
+
+          <div class="project">
+            <p>
+              Julie Pysch
+            </p>
+            <div id="project3">
+              <img src="../../assets//markup/jscover.png" alt="" height="400" width="225" class="framed-image" id="main3">
+              <div class="gallery__previews gallery-portrait">
+                <img src="../../assets//nomarkup/jscover.png" onclick="changeThirdImage(this.src)" alt="Gallery image" height="100" width="56" />
+                <img src="../../assets//nomarkup/jsabout.png" onclick="changeThirdImage(this.src)" alt="Gallery image" height="100" width="56" />
+                <img src="../../assets//nomarkup/jsservices.png" onclick="changeThirdImage(this.src)" alt="Gallery image" height="100" width="56" />
+                <img src="../../assets//nomarkup/jscontact.png" onclick="changeThirdImage(this.src)" alt="Gallery image" height="100" width="56" />
+              </div>
+            </div>
+            <span>
+                  <a href="https://juliepsych.herokuapp.com/">
+                    <i class="fas fa-globe-americas"></i> Website
+                  </a>
+
+                  <a href="https://github.com/DaniSinc/JuliePsych">
+                    <i class="fab fa-github-square"></i>Repository
+                  </a>
+            </span>
+
+            <script>
+              const changeThirdImage = src => {
+                document.getElementById('main3').src = src.replace("nomarkup", "markup");
+              };
+            </script>
+
+          </div>
+
+        <hr class="four">
+
+      </div>
     </div>
-  
-    <script>
-      const changeSecondImage = src => {
-        document.getElementById('main2').src = src.replace("nomarkup", "markup");
-      };
-    </script>
   </div>
-
-  <div>
-    <img src="../../assets//markup/jscover.png" alt="" height="400" width="225" class="framed-image" id="main3">
-    <div class="gallery__previews">
-      <img src="../../assets//nomarkup/jscover.png" onclick="changeThirdImage(this.src)" alt="Gallery image" height="100" width="56" />
-      <img src="../../assets//nomarkup/jsabout.png" onclick="changeThirdImage(this.src)" alt="Gallery image" height="100" width="56" />
-      <img src="../../assets//nomarkup/jsservices.png" onclick="changeThirdImage(this.src)" alt="Gallery image" height="100" width="56" />
-      <img src="../../assets//nomarkup/jscontact.png" onclick="changeThirdImage(this.src)" alt="Gallery image" height="100" width="56" />
-    </div>
-  
-    <script>
-      const changeThirdImage = src => {
-        document.getElementById('main3').src = src.replace("nomarkup", "markup");
-      };
-    </script>
-  </div>
-
-  <!-- <div class="section">
-    <h2>PORTFOLIO</h2>
-    <hr>
-    <div>
-      <div class="gallery__main">
-        <img src="../media/markup/thhhcover.png" id="main" alt="Gallery image" height="300" width="533" />
-      </div>
-      ​
-      <div class="gallery__previews">
-        <img src="../media/markup/thhhcover.png" onclick="changeImage(this.src)" alt="Gallery image" height="78" width="139"/>
-        <img src="../media/markup/thhhsign.png" onclick="changeImage(this.src)" alt="Gallery image" height="78" width="139"/>
-        <img src="../media/markup/thhhsearch.png" onclick="changeImage(this.src)" alt="Gallery image" height="78" width="139"/>
-        <img src="../media/markup/thhhresults.png" onclick="changeImage(this.src)" alt="Gallery image" height="78" width="139"/>
-        <img src="../media/markup/thhhchat.png" onclick="changeImage(this.src)" alt="Gallery image" height="78" width="139" />
-      </div>
-      <script>
-      const changeImage = src => {
-          document.getElementById('main').src = src
-        };
-      </script>
-    </div>
-    
-    <div>
-      <div class="gallery__main">
-        <img src="../media/markup/otbcover.png" id="maintwo" alt="Gallery image" height="300" width="533" />
-      </div>
-      ​
-      <div class="gallery__previews">
-        <img src="../media/markup/otbcover.png" onclick="changeSecondImage(this.src)" alt="Gallery image" height="78" width="139" />
-        <img src="../media/markup/otbsearch.png" onclick="changeSecondImage(this.src)" alt="Gallery image" height="78" width="139" />
-        <img src="../media/markup/otbshow.png" onclick="changeSecondImage(this.src)" alt="Gallery image" height="78" width="139" />
-      </div>
-      <script>
-        const changeSecondImage = src => {
-          document.getElementById('maintwo').src = src
-        };
-      </script>
-    </div>
-
-    <div>
-      <div class="gallery__main">
-        <img src="../media/markup/jscover.png" id="mainthree" alt="Gallery image" height="400" width="225"/>
-      </div>
-      ​
-      <div class="gallery__previews">
-        <img src="../media/markup/jscover.png" onclick="changeThirdImage(this.src)" alt="Gallery image" height="80" width="45" />
-        <img src="../media/markup/jsabout.png" onclick="changeThirdImage(this.src)" alt="Gallery image" height="80" width="45" />
-        <img src="../media/markup/jsservices.png" onclick="changeThirdImage(this.src)" alt="Gallery image" height="80" width="45" />
-        <img src="../media/markup/jscontact.png" onclick="changeThirdImage(this.src)" alt="Gallery image" height="80" width="45" />
-      </div>
-      <script>
-        const changeThirdImage = src => {
-          document.getElementById('mainthree').src = src
-        };
-      </script>
-    </div>
-  </div>
+</div>
