@@ -21,97 +21,80 @@
         </div>
 
         <div class="projects-body fade-in3">
-        
-          <div class="project" id="project1">
-            <p>
-              The Healthy Hair Hub
-            </p>
-            <img src="assets/markup/thhhcover.png" alt="" height="300" width="533" class="framed-image" id="main">
-            <div class="gallery__previews">
-              <img src="assets/nomarkup/thhhcover.png" onclick="changeImage(this.src)" alt="Gallery image" height="78" width="139" />
-              <img src="assets/nomarkup/thhhsign.png" onclick="changeImage(this.src)" alt="Gallery image" height="78" width="139" />
-              <img src="assets/nomarkup/thhhsearch.png" onclick="changeImage(this.src)" alt="Gallery image" height="78" width="139" />
-              <img src="assets/nomarkup/thhhresults.png" onclick="changeImage(this.src)" alt="Gallery image" height="78" width="139" />
-            </div>
 
-            <span>
-                  <a href="http://www.thehealthyhairhub.com/">
-                    <i class="fas fa-globe-americas"></i> Website
-                  </a>
-
-                  <a href="https://github.com/DaniSinc/CurlFriend">
-                    <i class="fab fa-github-square"></i>Repository
-                  </a>
-            </span>
-
-            <script>
-              const changeImage = src => {
-                document.getElementById('main').src = src.replace("nomarkup", "markup");
-              };
-            </script>
-          </div>
-
-          <div class="project" id="project2">
-            <p>
-              Open Tool Box
-            </p>
-            <<%= image_tag 'otbcover.png' %>>
-            <img src="../../assets/markup/otbcover.png" alt="" height="300" width="533" class="framed-image" id="main2">
-            <div class="gallery__previews">
-              <img src="../../assets/nomarkup/otbcover.png" onclick="changeSecondImage(this.src)" alt="Gallery image" height="78" width="139" />
-              <img src="../../assets/nomarkup/otbsearch.png" onclick="changeSecondImage(this.src)" alt="Gallery image" height="78" width="139" />
-              <img src="../../assets/nomarkup/otbshow.png" onclick="changeSecondImage(this.src)" alt="Gallery image" height="78" width="139" />
-            </div>
-
-            <span>
-                  <a href="https://opentoolbox-joshuaobura.herokuapp.com/">
-                    <i class="fas fa-globe-americas"></i> Website
-                  </a>
-
-                  <a href="https://github.com/JoshuaObura/open_Tool_Box">
-                    <i class="fab fa-github-square"></i>Repository
-                  </a>
-            </span>
-
-            <script>
-              const changeSecondImage = src => {
-                document.getElementById('main2').src = src.replace("nomarkup", "markup");
-              };
-            </script>
-
-          </div>
-
-
-          <div class="project">
-            <p>
-              Julie Pysch
-            </p>
-            <div id="project3">
-              <img src="../../assets/markup/jscover.png" alt="" height="400" width="225" class="framed-image" id="main3">
-              <div class="gallery__previews gallery-portrait">
-                <img src="../../assets/nomarkup/jscover.png" onclick="changeThirdImage(this.src)" alt="Gallery image" height="100" width="56" />
-                <img src="../../assets/nomarkup/jsabout.png" onclick="changeThirdImage(this.src)" alt="Gallery image" height="100" width="56" />
-                <img src="../../assets/nomarkup/jsservices.png" onclick="changeThirdImage(this.src)" alt="Gallery image" height="100" width="56" />
-                <img src="../../assets/nomarkup/jscontact.png" onclick="changeThirdImage(this.src)" alt="Gallery image" height="100" width="56" />
+          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <%= image_tag 'thhhcover.png', class: "landscape-carousel-item" %>
+              </div>
+              <div class="carousel-item">
+                <%= image_tag 'thhhsearch.png', class: "landscape-carousel-item" %>
+              </div>
+              <div class="carousel-item">
+                <%= image_tag 'thhhresults.png', class: "landscape-carousel-item" %> 
+              </div>
+              <div class="carousel-item">
+                <%= image_tag 'thhhchat.png', class: "landscape-carousel-item" %> 
               </div>
             </div>
-            <span>
-                  <a href="https://juliepsych.herokuapp.com/">
-                    <i class="fas fa-globe-americas"></i> Website
-                  </a>
-
-                  <a href="https://github.com/DaniSinc/JuliePsych">
-                    <i class="fab fa-github-square"></i>Repository
-                  </a>
-            </span>
-
-            <script>
-              const changeThirdImage = src => {
-                document.getElementById('main3').src = src.replace("nomarkup", "markup");
-              };
-            </script>
-
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
           </div>
+
+          <div id="carouselExampleControls2" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <%= image_tag 'otbcover.png', class: "landscape-carousel-item" %>
+              </div>
+              <div class="carousel-item">
+                <%= image_tag 'otbsearch.png', class: "landscape-carousel-item" %>
+              </div>
+              <div class="carousel-item">
+                <%= image_tag 'otbshow.png', class: "landscape-carousel-item" %> 
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls2" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls2" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+
+          <div id="carouselExampleControls3" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <%= image_tag 'jscover.png', class: "portrait-carousel-item" %> 
+              </div>
+              <div class="carousel-item">
+                <%= image_tag 'jscontact.png', class: "portrait-carousel-item" %> 
+              </div>
+              <div class="carousel-item">
+                <%= image_tag 'jsservices.png', class: "portrait-carousel-item" %>  
+              </div>
+              <div class="carousel-item">
+                <%= image_tag 'jscontact.png', class: "portrait-carousel-item" %>  
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls3" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls3" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+
+        </div>
 
       </div>
       <hr class="four">

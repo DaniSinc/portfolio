@@ -66,6 +66,16 @@
 //   grid-template-columns: 1fr 1fr;
 // }
 
+.landscape-carousel-item {
+  height: 300px;
+  width: 533px;
+}
+
+.portrait-carousel-item {
+  height: 400px;
+  width: 225px;
+}
+
 #project3 {
   display: grid;
   grid-template-columns: 2fr 1fr;
