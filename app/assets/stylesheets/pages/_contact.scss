@@ -41,3 +41,15 @@
   background-color: black;
   // border-top: $teal 3px solid;
 }
+
+
+.socials {
+  display: inline;
+    a {
+      color: white;
+      padding: 0 10px 0 10px;
+    }
+    i {
+      color: white;
+    }
+}
