@@ -9,11 +9,6 @@
   padding-right: 50px;
 }
 
-.inner-projects-page {
-  margin: 10px;
-  background-color: black;
-}
-
 .projects-page {
   text-align: center;
   background-image: url(https://images.unsplash.com/photo-1515404929826-76fff9fef6fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60);
@@ -23,6 +18,10 @@
         font-size: 40px;
         padding-bottom: 1px;
       }
+}
+.inner-projects-page {
+  margin: 10px;
+  background-color: black;
 }
 
 .projects-body {
@@ -64,12 +63,6 @@
   }
 }
 
-// .projects {
-//     max-width: 533px;
-//     margin: 0 auto;
-// }
-
-
 .landscape-carousel-item {
   height: 300px;
   width: 533px;
@@ -78,4 +71,9 @@
 .portrait-carousel-item {
   height: 400px;
   width: 225px;
+}
+
+#projects-menu {
+  top: 0.5%;
+  left: 6%;
 }
