@@ -51,10 +51,14 @@
     }
     i {
       color: white;
+      padding-right: 6px;
     }
 }
 
 @media (max-width: 576px) {
+  .outer-contact-page {
+    padding: 0 20px;
+  }
   .contact-page {
     h2 {
       font-size: 30px;

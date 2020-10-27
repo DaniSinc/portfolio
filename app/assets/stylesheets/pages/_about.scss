@@ -48,6 +48,9 @@
 }
 
 @media (max-width: 576px) {
+  .outer-about-page {
+    padding: 0 20px;
+  }
   .about-page h2 {
     font-size: 30px;
   }
@@ -58,7 +61,8 @@
       margin: 0 auto;
     }
   }
-  #about-menu-icon {
-    padding-bottom: 16px;
+  #pages-menu-icon {
+    left: 6%;
+    top: 2%;
   }
 }
