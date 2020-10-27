@@ -51,15 +51,36 @@ li a{
 
 @media (max-width: 576px) {
   .typewriter {
-    margin-left: -20px;
+    margin-left: -36px;
+    margin-top: 20px;
+  }
+  .open {
+    transform: translate(150px, 0);
   }
   #home-menu-icon {
     margin-left: -27px;
-    font-size: 28px;
+    margin-top: 20px;
+    font-size: 24px;
   }
   #name {
     margin-left: -1px;
     font-size: 40px;
 
+  }
+}
+
+@media (max-width: 320px) {
+  .typewriter {
+    margin-left: -10px;
+  }
+  .open {
+    transform: translate(128px, 0);
+  }
+  #home-menu-icon {
+    margin-left: -32px;
+    font-size: 20px;
+  }
+  #name {
+    font-size: 32px;
   }
 }

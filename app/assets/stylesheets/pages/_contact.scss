@@ -53,3 +53,21 @@
       color: white;
     }
 }
+
+@media (max-width: 576px) {
+  .contact-page {
+    h2 {
+      font-size: 30px;
+    }
+  }
+  .socials {
+    a {
+      padding: 5px;
+      font-size: 14px;
+    }
+    i {
+      font-size: 14px;
+      padding-right: 5px;
+    }
+  }
+}

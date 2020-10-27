@@ -41,3 +41,23 @@ a.toggle-nav {
     justify-self: start;
     align-items: flex-start;
 }
+
+@media (max-width: 576px) {
+    .sidenav {
+        width: 150px;
+        a {
+            font-size: 20px;
+            margin-left: 5px;
+        }
+    }
+}
+
+@media (max-width: 320px) {
+  .sidenav {
+      width: 128px;
+          a{
+            font-size: 18px;
+            margin-left: -3px;
+          }
+  }
+}
